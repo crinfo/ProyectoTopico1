@@ -1,0 +1,16 @@
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\Prueba4.csprojAssemblyReference.cache
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\bin\Debug\netstandard2.0\Prueba4.deps.json
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\bin\Debug\netstandard2.0\Prueba4.dll
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\bin\Debug\netstandard2.0\ref\Prueba4.dll
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\bin\Debug\netstandard2.0\Prueba4.pdb
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\Prueba4.AssemblyInfoInputs.cache
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\Prueba4.AssemblyInfo.cs
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\Prueba4.csproj.CoreCompileInputs.cache
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\Prueba4.dll
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\ref\Prueba4.dll
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\Prueba4.pdb
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\views\Page1.xaml.g.cs
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\views\Page2.xaml.g.cs
