@@ -10,11 +10,11 @@
         <Image Source="imgs\usr1.png" />
 
         <Label Text="Usuario" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
-        <Entry Placeholder="ingrese su usuario" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
+        <Entry Text="{Binding Usuario}" Placeholder="ingrese su usuario" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
         <Label Text="Contraseña" HorizontalOptions="Center" FontSize="18" Margin="0,40,0,0"/>
-        <Entry Placeholder="ingrese su contraseña" IsPassword="true" MaxLength="6" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
+        <Entry text="{Binding Pass}" Placeholder="ingrese su contraseña" IsPassword="true" MaxLength="6" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
         <Button BackgroundColor="#129A74" Text="Ingresar" TextColor="White" WidthRequest="100" HeightRequest="50" CornerRadius="10"
-                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="Button_Clicked_1"></Button>
+                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="Button_Clicked_1()"></Button>
         <Button BackgroundColor="White" FontSize="9" Text="No puedo acceder a mi cuenta" TextColor="Black" WidthRequest="180" HeightRequest="30" CornerRadius="10"
                 BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="Button_Clicked_2"></Button>
 

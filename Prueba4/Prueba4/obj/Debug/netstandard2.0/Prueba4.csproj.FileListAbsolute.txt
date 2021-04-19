@@ -14,3 +14,5 @@ C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\ref\Prueba4
 C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\Prueba4.pdb
 C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\views\Page1.xaml.g.cs
 C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\views\Page2.xaml.g.cs
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\views\Page3.xaml.g.cs
+C:\Users\edu_b\source\repos\Prueba4\Prueba4\obj\Debug\netstandard2.0\views\Page4.xaml.g.cs

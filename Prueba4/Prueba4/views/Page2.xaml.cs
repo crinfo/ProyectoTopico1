@@ -16,5 +16,21 @@ namespace Prueba4.views
         {
             InitializeComponent();
         }
+
+        async private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+
+        async private void ico_catIng(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(page: new MainPage());
+
+        }
+        async private void ico_prodIng(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(page: new MainPage());
+
+        }
     }
 }

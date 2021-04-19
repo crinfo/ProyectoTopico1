@@ -4,15 +4,22 @@
              x:Class="Prueba4.views.Page1">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
                 <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
             </Frame>
-            <Label Text="Usuario" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
-            <Entry Placeholder="ingrese su usuario" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
-            <Label Text="Contraseña" HorizontalOptions="Center" FontSize="18" Margin="0,40,0,0"/>
-            <Entry Placeholder="ingrese su contraseña" IsPassword="true" MaxLength="6" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Entry>
-            <Button BackgroundColor="Black" Text="Ingresar" TextColor="White" WidthRequest="100" HeightRequest="50" CornerRadius="10"
-                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="Button_Clicked_1"></Button>
+            <Label Text="Nombre Usuario" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+            <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
+            <Label Text="Administrador" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+            <FlexLayout AlignItems="Stretch" JustifyContent="Center">
+                <ImageButton Source="img2.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_user" BackgroundColor="Transparent" Margin="0,20,0,0"/>
+                <ImageButton Source="img3.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_prod" BackgroundColor="Transparent" Margin="30,20,0,0"/>
+            </FlexLayout>
+
+
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Center">
+                <ImageButton Source="img4.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_bod" BackgroundColor="Transparent" Margin="0,20,0,0"/>
+                <ImageButton Source="img5.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_cat" BackgroundColor="Transparent" Margin="30,20,0,0"/>
+            </FlexLayout>
 
         </StackLayout>
     </ContentPage.Content>

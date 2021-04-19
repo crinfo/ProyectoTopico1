@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueba4.views.Page4">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
+                <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Nombre Usuario" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+            <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
+            <Label Text="Consulta de Mercaderías" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Center">
+                <Picker x:Name="pickerCatCons" Title="Seleccione Categoría" TitleColor="Black">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Categoria 1</x:String>
+                            <x:String>Categoria 2</x:String>
+                            <x:String>Categoria 3</x:String>
+                            <x:String>Categoria 4</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker x:Name="pickerProdCons" Title="Seleccione producto" TitleColor="Black" Margin="20,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Producto 1</x:String>
+                            <x:String>Producto 2</x:String>
+                            <x:String>Producto 3</x:String>
+                            <x:String>Producto 4</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </FlexLayout>
+            <Button BackgroundColor="#129A74" Text="Consultar" TextColor="White" WidthRequest="100" HeightRequest="50" CornerRadius="10"
+                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="cons_cant"></Button>
+
+            <FlexLayout AlignContent="Center" JustifyContent="Center" AlignItems="Center" Margin="20,0,0,0">
+                <Label Text="Existencia :" VerticalOptions="Start" FontSize="22"/>
+
+                <Entry Keyboard="Numeric" Placeholder="00000" FontSize="22" SelectionLength="10"  BindingContext="" WidthRequest="100" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="20,0,0,0"></Entry>
+            </FlexLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
