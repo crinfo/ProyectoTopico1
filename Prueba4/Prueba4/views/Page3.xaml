@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Prueba4.views.Page3">
+    <!--página utilizada para el usuario de retiro de mercaderías-->
     <ContentPage.Content>
         <StackLayout>
             <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
@@ -11,8 +12,8 @@
             <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
             <Label Text="Retiro de  Mercaderías" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
             <FlexLayout AlignItems="Stretch" JustifyContent="Center">
-                <ImageButton Source="img5.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_catRet" BackgroundColor="Transparent" Margin="0,20,0,0"/>
-                <ImageButton Source="img3.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_prodRet" BackgroundColor="Transparent" Margin="50,20,0,0"/>
+                <ImageButton Source="img5.png" HorizontalOptions="Center" HeightRequest="120" BackgroundColor="Transparent" Margin="0,20,0,0"/>
+                <ImageButton Source="img3.png" HorizontalOptions="Center" HeightRequest="120"  BackgroundColor="Transparent" Margin="50,20,0,0"/>
             </FlexLayout>
 
 
