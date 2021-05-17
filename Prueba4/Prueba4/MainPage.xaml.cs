@@ -37,6 +37,5 @@ namespace Prueba4
             await Navigation.PushAsync(new Page4());
 
         }
-
     }
 }

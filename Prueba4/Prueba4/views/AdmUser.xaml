@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueba4.Views.AdmUser">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
+                <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
+            <Label TextColor="Black" Text="Administrador" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+
+            <Label TextColor="Black" Text="Crear Nuevo Usuario" HorizontalOptions="Start" FontSize="18" Margin="0,30,0,0"/>
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                <Entry FontSize="Medium" TextColor="Black" PlaceholderColor="Black" x:Name="entradaNombre" Placeholder="Nombre" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Entry FontSize="Medium" TextColor="Black" PlaceholderColor="Black" x:Name="entradaCorreo" Placeholder="Correo" HorizontalOptions="Start" HorizontalTextAlignment="Start" Margin="100,0,0,0"/>
+
+            </FlexLayout>
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                <Picker FontSize="Medium" TextColor="Black" x:Name="seleccionPerfil" Title="Perfil" TitleColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Start">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Administrador</x:String>
+                            <x:String>Ingreso Mercaderías</x:String>
+                            <x:String>Retiro Mercaderías</x:String>
+                            <x:String>Consulta</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Entry FontSize="Medium" TextColor="Black" PlaceholderColor="Black" x:Name="entradaPass" Placeholder="Clave" HorizontalOptions="Start" HorizontalTextAlignment="Start" Keyboard="Numeric" MaxLength="6"  Margin="65,0,0,0"/>
+            </FlexLayout>
+            <Button BackgroundColor="#129A74" Text="Crear" FontSize="Small" TextColor="White" WidthRequest="120" HeightRequest="30" CornerRadius="10"
+                BorderColor="Black" HorizontalOptions="CenterAndExpand"  Margin="0,30,0,0" Clicked="crearUsr"></Button>
+            <Label Text="Usuarios registrados" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" FontSize="Medium"></Label>
+
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                <Label TextColor="Black" Text="ID"  Margin="20,0,0,0"/>
+                <Label TextColor="Black" Text="Nombre"  Margin="20,0,0,0"/>
+                <Label TextColor="Black" Text="Correo" Margin="60,0,0,0"/>
+                <Label TextColor="Black" Text="Perfil" Margin="70,0,0,0"/>
+                <Label TextColor="Black" Text="Pass" Margin="40,0,0,0"/>
+                <Label TextColor="Black" Text="Estado" Margin="40,0,0,0"/>
+            </FlexLayout>
+            <CollectionView x:Name="colectionUsr">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                            <Label Text="{Binding ID}" FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                            <Label Text="{Binding Nombre}" FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                            <Label Text="{Binding Correo}" FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                            <Label Text="{Binding Perfil}" FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                            <Label Text="{Binding Pass}"  FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                            <Label Text="{Binding Estado}"  FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                        </FlexLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Label TextColor="Black" Text="Activar / Desactivar Usuario" HorizontalOptions="Start" FontSize="18" Margin="0,10,0,0"/>
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                <Entry TextColor="Black" FontSize="Medium" PlaceholderColor="Black" x:Name="IdUsrActDesac" Placeholder="ID Usuario" HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" />
+                <Picker TextColor="Black" FontSize="Medium" x:Name="seleccionEstado" Margin="40,0,0,0" Title="Estado" TitleColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Start">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Activo</x:String>
+                            <x:String>Inactivo</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Button BackgroundColor="#129A74" Text="Actualizar" TextColor="White" WidthRequest="100" FontSize="Small" HeightRequest="30" CornerRadius="10"
+                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="40,10,0,0" Clicked="ActDesactUsr"></Button>
+            </FlexLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prueba4.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,7 @@ namespace Prueba4.views
 
         async private void ico_user(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(page: new MainPage());
+            await Navigation.PushAsync(page: new AdmUser());
 
         }
         async private void ico_prod(object sender, EventArgs e)
@@ -40,6 +41,12 @@ namespace Prueba4.views
         async private void ico_cat(object sender, EventArgs e)
         {
             await Navigation.PushAsync(page: new MainPage());
+
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+           // collectionView.ItemsSource = await App.Database.GetPeopleAsync();
 
         }
     }

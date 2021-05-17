@@ -4,19 +4,17 @@
              x:Class="Prueba4.views.Page1">
     <!--página utilizada para el inicio del usuario administrador-->
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
             <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
                 <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
             </Frame>
-            <Label Text="Nombre Usuario" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+            <Label Text="{Binding Nombre}" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0" x:Name="textoNombre" TextColor="Black"/>
             <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
-            <Label Text="Administrador" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+            <Label Text="Administrador" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"  TextColor="Black"/>
             <FlexLayout AlignItems="Stretch" JustifyContent="Center">
                 <ImageButton Source="img2.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_user" BackgroundColor="Transparent" Margin="0,20,0,0"/>
                 <ImageButton Source="img3.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_prod" BackgroundColor="Transparent" Margin="30,20,0,0"/>
             </FlexLayout>
-
-
             <FlexLayout AlignContent="SpaceAround" JustifyContent="Center">
                 <ImageButton Source="img4.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_bod" BackgroundColor="Transparent" Margin="0,20,0,0"/>
                 <ImageButton Source="img5.png" HorizontalOptions="Center" HeightRequest="120" Clicked="ico_cat" BackgroundColor="Transparent" Margin="30,20,0,0"/>
