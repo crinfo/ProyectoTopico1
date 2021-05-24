@@ -15,7 +15,7 @@
         <!--Label TextColor="Black" Text="Contraseña" HorizontalOptions="Center" FontSize="18" Margin="0,40,0,0"/-->
         <Entry PlaceholderColor="Black" TextColor="Black" x:Name="clave" Placeholder="Contraseña" IsPassword="true" MaxLength="6" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="0,40,0,0"></Entry>
         <Button BackgroundColor="#129A74" Text="Ingresar" TextColor="White" WidthRequest="100" HeightRequest="50" CornerRadius="10"
-                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,40,0,0" Clicked="Button_Clicked_1"></Button>
+                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,40,0,0" Clicked="Button_Login"></Button>
         <!--Button BackgroundColor="#129A74" Text="Ingresar2" TextColor="White" WidthRequest="100" HeightRequest="50" CornerRadius="10"
                 BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="Button_Clicked_2"></>
         <Button BackgroundColor="#129A74" Text="Ingresar3" TextColor="White" WidthRequest="100" HeightRequest="50" CornerRadius="10"

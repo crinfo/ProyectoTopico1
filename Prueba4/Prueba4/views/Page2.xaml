@@ -4,48 +4,30 @@
              x:Class="Prueba4.views.Page2">
     <!--página utilizada para el usuario de ingreso de mercaderías-->
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
             <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
                 <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
             </Frame>
-            <Label Text="Nombre Usuario" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+            <Label Text="Nombre Usuario" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0" TextColor="Black"/>
             <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
-            <Label Text="Ingreso de Mercaderías" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+            <Label Text="Ingreso de Mercaderías" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0" TextColor="Black"/>
             <FlexLayout AlignItems="Stretch" JustifyContent="Center">
                 <ImageButton Source="img5.png" HorizontalOptions="Center" HeightRequest="120" BackgroundColor="Transparent" Margin="0,20,0,0"/>
                 <ImageButton Source="img3.png" HorizontalOptions="Center" HeightRequest="120" BackgroundColor="Transparent" Margin="50,20,0,0"/>
             </FlexLayout>
-
-
             <FlexLayout AlignContent="SpaceAround" JustifyContent="Center">
-                <Picker x:Name="pickerCatIng" Title="Seleccione Categoría" TitleColor="Black">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Categoria 1</x:String>
-                            <x:String>Categoria 2</x:String>
-                            <x:String>Categoria 3</x:String>
-                            <x:String>Categoria 4</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
+                <Picker x:Name="pickerCatIng" Title="Seleccione Categoría" TitleColor="Black" TextColor="Black">
                 </Picker>
-                <Picker x:Name="pickerProdIng" Title="Seleccione producto" TitleColor="Black" Margin="20,0,0,0">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Producto 1</x:String>
-                            <x:String>Producto 2</x:String>
-                            <x:String>Producto 3</x:String>
-                            <x:String>Producto 4</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
+                <Picker x:Name="pickerProdIng" Title="Seleccione producto" TitleColor="Black" Margin="20,0,0,0" TextColor="Black">
                 </Picker>
             </FlexLayout>
             
-            <FlexLayout AlignContent="Center" JustifyContent="Center" AlignItems="Center" Margin="20,0,0,0">
-                <Label Text="Cantidad" VerticalOptions="Start" FontSize="22"/>
-                <Entry Keyboard="Numeric" Placeholder="00000" FontSize="22" SelectionLength="10"  BindingContext="" WidthRequest="100" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="20,0,0,0"></Entry>
+            <FlexLayout AlignContent="Center" JustifyContent="Center" AlignItems="Center" Margin="20,0,0,0" >
+                <Label Text="Cantidad" VerticalOptions="Start" FontSize="22" TextColor="Black"/>
+                <Entry Keyboard="Numeric" Placeholder="0" PlaceholderColor="Black" x:Name="cant_sum" TextColor="Black" FontSize="Medium" SelectionLength="10" WidthRequest="100" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="20,0,0,0"></Entry>
             </FlexLayout>
             <Button BackgroundColor="#129A74" Text="Ingresar" TextColor="White" WidthRequest="100" HeightRequest="50" CornerRadius="10"
-                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="Button_Clicked_1"></Button>
+                BorderColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" Clicked="Button_Clicked_1" FontSize="Medium"></Button>
             
         </StackLayout>
     </ContentPage.Content>

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.Views.Page2.xaml", "Views/Page2.xaml", typeof(global::Prueba4.views.Page2))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.views.Page2.xaml", "views/Page2.xaml", typeof(global::Prueba4.views.Page2))]
 
 namespace Prueba4.views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Page2.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\Page2.xaml")]
     public partial class Page2 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -23,10 +23,14 @@ namespace Prueba4.views {
         private global::Xamarin.Forms.Picker pickerProdIng;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Entry cant_sum;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page2));
             pickerCatIng = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerCatIng");
             pickerProdIng = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerProdIng");
+            cant_sum = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "cant_sum");
         }
     }
 }

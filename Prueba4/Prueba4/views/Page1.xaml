@@ -8,7 +8,6 @@
             <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
                 <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
             </Frame>
-            <Label Text="{Binding Nombre}" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0" x:Name="textoNombre" TextColor="Black"/>
             <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
             <Label Text="Administrador" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"  TextColor="Black"/>
             <FlexLayout AlignItems="Stretch" JustifyContent="Center">

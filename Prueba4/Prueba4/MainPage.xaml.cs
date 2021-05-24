@@ -16,26 +16,50 @@ namespace Prueba4
             InitializeComponent();
         }
 
-        async private void Button_Clicked_1(object sender, EventArgs e)
+        async private void Button_Login(object sender, EventArgs e)
         {
+            var usr = usuario.Text;
+            var pass = clave.Text;
 
-            await Navigation.PushAsync(new Page1());
-        }
+                if (usr=="super") {
+                    await Navigation.PushAsync(new Page1());
+                }
+                else { 
+                    var perfil = await App.Database.leeUsuario(usr,pass);
+                    int esper = perfil.Count();
+                Console.WriteLine(esper);
+                    if (esper == 0)
+                    {
+                        await DisplayAlert("Error", "Usuario/Clave inválida", "OK");
+                    }
+                    else
+                    {
+                        var usrPerfil = perfil[0].Perfil.ToString();
+                    Console.WriteLine(usrPerfil);
+                        switch (usrPerfil)
+                        {
+                            case "Administrador":
+                                await Navigation.PushAsync(new Page1());
 
-        async private void Button_Clicked_2(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page2());
+                                break;
+                            case "Ingreso":
+                                await Navigation.PushAsync(new Page2());
 
-        }
-        async private void Button_Clicked_3(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page3());
+                                break;
+                            case "Retiro":
+                                await Navigation.PushAsync(new Page3());
 
-        }
-        async private void Button_Clicked_4(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page4());
-
+                                break;
+                            case "Consulta":
+                                await Navigation.PushAsync(new Page4());
+                                break;
+                            default:
+                                await DisplayAlert("Error", "Usuario/Clave inválida", "OK");
+                                break;
+                        }
+                    }
+                }
+            
         }
     }
 }

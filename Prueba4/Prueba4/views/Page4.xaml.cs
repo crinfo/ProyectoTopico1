@@ -16,9 +16,29 @@ namespace Prueba4.views
         {
             InitializeComponent();
         }
-
-        private void cons_cant(object sender, EventArgs e)
+        protected override async void OnAppearing()
         {
+            base.OnAppearing();
+            //carga desde BD
+            var prod = await App.Database.leerProducto();
+            int cantidad = prod.Count();
+            Console.WriteLine(cantidad);
+            for (int i = 0; i < cantidad; i++)
+            {
+                pickerProdIng.Items.Add(prod[i].Nombre.ToString());
+            }
+        }
+
+        async private void cons_cant(object sender, EventArgs e)
+        {
+            var prod = pickerProdIng.SelectedItem.ToString();
+            var productos = await App.Database.leerProductoCant(prod);
+            Console.WriteLine(productos[0].Cantidad.ToString());
+
+            colectionUsr.ItemsSource = await App.Database.leerProductoCant(prod);
+
+
+
 
         }
     }

@@ -27,10 +27,6 @@ namespace Prueba4
         public App()
         {
             InitializeComponent();
-
-            //MainPage  = new MainPage();//--> descomentar para volver a main page
-            // se debe eliminar la primera para poder usar el segundo comando
-            // MainPage =  new NavigationPage(new Page1());
             MainPage =  new NavigationPage(new MainPage());
 
 

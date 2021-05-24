@@ -12,6 +12,8 @@ namespace LocalDatabase
         public int ID { get; set; }
         public string Nombre { get; set; }
 
-        public int categoria { get; set; }
+        public string Categoria { get; set; }
+
+        public int Cantidad { get; set; }
     }
 }

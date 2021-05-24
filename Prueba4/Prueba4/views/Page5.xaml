@@ -4,7 +4,7 @@
              x:Class="Prueba4.views.Page5">
     <!--página utilizada para el administrador, administración de usuarios-->
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
             <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
                 <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
             </Frame>

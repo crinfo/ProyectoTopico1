@@ -30,17 +30,17 @@ namespace Prueba4.views
         }
         async private void ico_prod(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(page: new MainPage());
+            await Navigation.PushAsync(page: new AdmProduct());
 
         }
         async private void ico_bod(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(page: new MainPage());
+            await Navigation.PushAsync(page: new AdmBodega());
 
         }
         async private void ico_cat(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(page: new MainPage());
+            await Navigation.PushAsync(page: new AdmCategoria());
 
         }
         protected override async void OnAppearing()

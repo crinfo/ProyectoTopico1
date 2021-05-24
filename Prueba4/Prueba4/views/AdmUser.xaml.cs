@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +20,9 @@ namespace Prueba4.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+
             colectionUsr.ItemsSource = await App.Database.GetPeopleAsync();
-            
+
         }
         async void crearUsr(object sender, EventArgs e)
         {
@@ -30,10 +31,10 @@ namespace Prueba4.Views
                 string perf = "";
                 switch (seleccionPerfil.SelectedIndex) {
                     case 0:
-                        perf = "adm";
+                        perf = "Administrador";
                         break;
                     case 1:
-                        perf="ingreso";
+                        perf="Ingreso";
                         break;
                     case 2:
                         perf = "Retiro";

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.Views.Page5.xaml", "Views/Page5.xaml", typeof(global::Prueba4.views.Page5))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.views.Page5.xaml", "views/Page5.xaml", typeof(global::Prueba4.views.Page5))]
 
 namespace Prueba4.views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Page5.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\Page5.xaml")]
     public partial class Page5 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

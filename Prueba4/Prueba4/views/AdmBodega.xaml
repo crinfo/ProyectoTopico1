@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueba4.views.AdmBodega">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="#129A74" Padding="24" CornerRadius="0">
+                <Label Text="Flash Inventory" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Image Source="img1.png" Aspect="Fill" HeightRequest="100" HorizontalOptions="Center"/>
+            <Label TextColor="Black" Text="Administrador" HorizontalOptions="Center" FontSize="18" Margin="0,20,0,0"/>
+
+            <Label TextColor="Black" Text="Crear Nueva Bodega" HorizontalOptions="Start" FontSize="18" Margin="0,30,0,0"/>
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                <Entry FontSize="Medium" TextColor="Black" PlaceholderColor="Black" x:Name="entradaNombreBod" Placeholder="Nombre" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+            </FlexLayout>
+
+            <Button BackgroundColor="#129A74" Text="Crear" FontSize="Small" TextColor="White" WidthRequest="120" HeightRequest="30" CornerRadius="10"
+                BorderColor="Black" HorizontalOptions="CenterAndExpand"  Margin="0,30,0,0" Clicked="creaBod"></Button>
+
+            <Label Text="Bodegas registradas" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" FontSize="Medium"></Label>
+
+            <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                <Label TextColor="Black" Text="ID" FontSize="18" Margin="0,0,0,0"/>
+                <Label TextColor="Black" Text="Nombre" FontSize="18" Margin="20,0,0,0"/>
+            </FlexLayout>
+            <ListView x:Name="colectionBod"
+                      ItemsSource="{Binding Bodega}"
+                      BackgroundColor="#F0ECEC"
+                      SelectionMode="None" 
+                      Footer="" Visual="Material">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="0,12">
+                                <Label  Text="{Binding ID}"      FontSize="18"  TextColor="Black"/>
+                                <Label  Text="{Binding Nombre}"  FontSize="18"  TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--
+            <CollectionView x:Name="colectionBod">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <FlexLayout AlignContent="SpaceAround" JustifyContent="Start">
+                            <Label Text="{Binding ID}" FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                            <Label Text="{Binding Nombre}" FontSize="Small" TextColor="Black" Margin="20,0,0,0"/>
+                        </FlexLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            -->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

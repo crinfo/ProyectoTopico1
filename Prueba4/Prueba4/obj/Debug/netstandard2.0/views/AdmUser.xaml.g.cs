@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.Views.AdmUser.xaml", "Views/AdmUser.xaml", typeof(global::Prueba4.Views.AdmUser))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.views.AdmUser.xaml", "views/AdmUser.xaml", typeof(global::Prueba4.Views.AdmUser))]
 
 namespace Prueba4.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AdmUser.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\AdmUser.xaml")]
     public partial class AdmUser : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -29,7 +29,7 @@ namespace Prueba4.Views {
         private global::Xamarin.Forms.Entry entradaPass;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.CollectionView colectionUsr;
+        private global::Xamarin.Forms.ListView colectionUsr;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry IdUsrActDesac;
@@ -44,7 +44,7 @@ namespace Prueba4.Views {
             entradaCorreo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "entradaCorreo");
             seleccionPerfil = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "seleccionPerfil");
             entradaPass = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "entradaPass");
-            colectionUsr = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CollectionView>(this, "colectionUsr");
+            colectionUsr = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "colectionUsr");
             IdUsrActDesac = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "IdUsrActDesac");
             seleccionEstado = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "seleccionEstado");
         }

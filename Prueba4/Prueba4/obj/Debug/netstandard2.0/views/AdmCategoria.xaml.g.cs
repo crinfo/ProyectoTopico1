@@ -8,25 +8,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.views.Page4.xaml", "views/Page4.xaml", typeof(global::Prueba4.views.Page4))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Prueba4.views.AdmCategoria.xaml", "views/AdmCategoria.xaml", typeof(global::Prueba4.views.AdmCategoria))]
 
 namespace Prueba4.views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\Page4.xaml")]
-    public partial class Page4 : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\AdmCategoria.xaml")]
+    public partial class AdmCategoria : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Picker pickerProdIng;
+        private global::Xamarin.Forms.Entry entradaNombreCat;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView colectionUsr;
+        private global::Xamarin.Forms.ListView colectionCat;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page4));
-            pickerProdIng = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerProdIng");
-            colectionUsr = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "colectionUsr");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AdmCategoria));
+            entradaNombreCat = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "entradaNombreCat");
+            colectionCat = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "colectionCat");
         }
     }
 }
